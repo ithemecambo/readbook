@@ -8,6 +8,10 @@
 import SwiftUI
 
 extension View {
+    func navigationBarColor(_ backgroundColor: Color?) -> some View {
+        self.modifier(NavigationBarModifier(backgroundColor: backgroundColor))
+    }
+    
     func navigatePush(whenTrue toggle: Binding<Bool>) -> some View {
         NavigationLink(
             destination: self,

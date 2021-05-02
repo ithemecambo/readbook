@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var toggle = false
     @State var tag = 0
+    @State private var active: Bool = false
     
     var body: some View {
         NavigationView {

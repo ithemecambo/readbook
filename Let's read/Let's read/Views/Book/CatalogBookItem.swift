@@ -9,24 +9,29 @@ import SwiftUI
 
 struct CatalogBookItem: View {
     @State var title: String = ""
+    @State var toggle = false
     
     var body: some View {
         VStack {
             HStack {
                 Text(title.uppercased())
                     .font(.system(size: 25))
+                    .fontWeight(.semibold)
                     .foregroundColor(.black)
                 
                 Spacer()
                 Button(action: {
+                    // Press to show list books
                     
                 }, label: {
-                    Text("Sell All")
-                        .font(.system(size: 15))
-                        .foregroundColor(Color("LightColor"))
-                    Image(systemName: "chevron.right.2")
-                        .font(.system(size: 14))
-                        .foregroundColor(Color("LightColor"))
+                    HStack {
+                        Text("Sell All")
+                            .font(.system(size: 15))
+                            .foregroundColor(Color("LightColor"))
+                        Image(systemName: "chevron.right.2")
+                            .font(.system(size: 14))
+                            .foregroundColor(Color("LightColor"))
+                    }
                 })
             }
         }

@@ -9,15 +9,18 @@ import SwiftUI
 
 struct BookGridItem: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Image("John Adams")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: _width / 2, height: 250)
+                .frame(height: 250)
+                .background(Color("GrayColor").opacity(0.2))
+                
             
             VStack(alignment: .leading, spacing: 6) {
                 Text("John Adams")
-                    .font(.system(size: 18))
+                    .font(.system(size: 20))
+                    .fontWeight(.semibold)
                     .foregroundColor(Color("DarkColor"))
                 
                 Text("Stephen King")
@@ -37,6 +40,7 @@ struct BookGridItem: View {
                 }
             }
         }
+        .padding(.trailing, 10)
     }
 }
 

@@ -9,16 +9,17 @@ import SwiftUI
 
 struct BookListItem: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 16) {
             HStack {
                 Image("John Adams")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .scaledToFit()
                     .frame(width: 150, height: 250)
                 
                 VStack(alignment: .leading, spacing: 10) {
                     Text("John Adams")
-                        .font(.system(size: 18))
+                        .font(.system(size: 20))
+                        .fontWeight(.semibold)
                         .foregroundColor(Color("DarkColor"))
                     
                     Text("Stephen King")
@@ -42,8 +43,8 @@ struct BookListItem: View {
                         .lineLimit(4)
                         .foregroundColor(Color("LightColor"))
                     HStack {
-                        CatalogItem(title: "Novel")
-                        CatalogItem(title: "Fantasy Faction")
+                        GenreItem(title: "Novel")
+                        GenreItem(title: "Fantasy Faction")
                     }
                     
                 }
@@ -65,10 +66,10 @@ struct ActionUserItem: View {
     var body: some View {
         HStack {
             Image(systemName: icon)
-                .font(.system(size: 20))
+                .font(.system(size: 12))
                 .foregroundColor(Color("GrayColor"))
             Text(title)
-                .font(.system(size: 15))
+                .font(.system(size: 13))
                 .foregroundColor(Color("LightColor"))
         }
     }
@@ -87,7 +88,7 @@ struct StarItem: View {
     }
 }
 
-struct CatalogItem: View {
+struct GenreItem: View {
     @State var title: String
     
     var body: some View {

@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let banners = ["design-a-stunning-book-promotion-banner", "design-book-promotion-banner", "design-book-promotions", "paid-book-online"]

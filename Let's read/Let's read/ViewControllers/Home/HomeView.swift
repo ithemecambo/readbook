@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var bannerIndex: Int = 0
     @State private var searchText: String = ""
     @State private var showCancelButton: Bool = false
     
@@ -25,6 +26,7 @@ struct HomeView: View {
                         }, onCommit: {
                             print("onCommit")
                         })
+                        .font(.system(size: 15))
                         .foregroundColor(.white)
                         .modifier(PlaceholderStyleModifier(showPlaceHolder: searchText.isEmpty,
                                                            placeholder: "Which book are you looking?"))
@@ -32,7 +34,9 @@ struct HomeView: View {
                         Button(action: {
                             self.searchText = ""
                         }) {
-                            Image(systemName: "xmark.circle.fill").opacity(searchText == "" ? 0 : 1)
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 20))
+                                .opacity(searchText == "" ? 0 : 1)
                         }
                     }
                     .padding(EdgeInsets(top: 55, leading: 6, bottom: 10, trailing: 0))
@@ -61,20 +65,22 @@ struct HomeView: View {
                 }
                 .frame(height: 80)
                 .padding()
-                .padding(.top, -10)
+                
                 .background(Color("AppColor"))
                 ScrollView(.vertical, showsIndicators: false) {
                     // Banner
-                    VStack {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                Image("")
+                    VStack(spacing: 20) {
+                        PagingView(index: $bannerIndex.animation(), maxIndex: banners.count - 1) {
+                            ForEach(banners, id: \.self) { name in
+                                Image(name)
                                     .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(height: 250)
+                                    .scaledToFill()
                             }
                         }
+                        .aspectRatio(4/3, contentMode: .fit)
+                        .clipShape(RoundedRectangle(cornerRadius: 0))
                     }
+                    .padding(.top, 0)
                     // Book for you
                     VStack {
                         // Book For You
@@ -159,8 +165,9 @@ struct HomeView: View {
                     .padding()
                     
                 }
+                .padding(.top, -10)
+                .padding(.bottom, 20)
             }
-            .background(Color.black)
             .navigationBarHidden(true)
             .ignoresSafeArea()
         }
