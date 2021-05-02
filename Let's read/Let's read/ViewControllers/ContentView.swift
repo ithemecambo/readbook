@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var toggle = false
+    @State var tag = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(alignment: .center, spacing: 24) {
+                Text("toggle pushed me")
+                    .navigatePush(whenTrue: $toggle)
+                Text("tag pushed me (2)")
+                    .navigatePush(when: $tag, matches: 2)
+                Text("tag pushed me (4)")
+                    .navigatePush(when: $tag, matches: 4)
+
+                Button("toggle") {
+                    self.toggle = true
+                }
+
+                Button("set tag 2") {
+                    self.tag = 2
+                }
+
+                Button("set tag 4") {
+                    self.tag = 4
+                }
+            }
+        }
     }
 }
 
