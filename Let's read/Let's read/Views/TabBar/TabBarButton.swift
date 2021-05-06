@@ -44,6 +44,7 @@ struct TabBarButton: View {
                 }
                 .tag(3)
         }
+        .accentColor(Color("AppColor"))
     }
 }
 

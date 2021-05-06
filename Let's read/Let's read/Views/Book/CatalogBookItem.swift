@@ -17,7 +17,7 @@ struct CatalogBookItem: View {
                 Text(title.uppercased())
                     .font(.system(size: 25))
                     .fontWeight(.semibold)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("TitleColor"))
                 
                 Spacer()
                 Button(action: {
@@ -25,12 +25,12 @@ struct CatalogBookItem: View {
                     
                 }, label: {
                     HStack {
-                        Text("Sell All")
+                        Text("View All")
                             .font(.system(size: 15))
-                            .foregroundColor(Color("LightColor"))
+                            .foregroundColor(Color("AppColor"))
                         Image(systemName: "chevron.right.2")
                             .font(.system(size: 14))
-                            .foregroundColor(Color("LightColor"))
+                            .foregroundColor(Color("AppColor"))
                     }
                 })
             }

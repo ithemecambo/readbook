@@ -35,7 +35,7 @@ struct MyBookItem: View {
                             .foregroundColor(Color("LightColor"))
                         ProgressBar(value: $progressValue, barColor: Color("LightColor"),
                                     progressColor: Color("AppColor"))
-                            .frame(height: 15)
+                            .frame(height: 8)
                     }
                     
                     Button(action: {
@@ -71,7 +71,7 @@ struct TabSelected: View {
             Text(title)
                 .font(.system(size: 18))
                 .fontWeight(.bold)
-                .foregroundColor(.black)
+                .foregroundColor(Color("TitleColor"))
                 .padding([.leading, .trailing], 10)
             Rectangle()
                 .frame(height: 5)

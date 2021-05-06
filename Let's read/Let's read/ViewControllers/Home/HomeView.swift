@@ -61,12 +61,13 @@ struct HomeView: View {
                         })
                         .padding()
                     }
+                    .padding(.trailing, -10)
                     .padding(.top, 40)
                 }
                 .frame(height: 80)
                 .padding()
-                
                 .background(Color("AppColor"))
+                
                 ScrollView(.vertical, showsIndicators: false) {
                     // Banner
                     VStack(spacing: 20) {
@@ -89,11 +90,12 @@ struct HomeView: View {
                         VStack {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
-                                    BookGridItem()
-                                    BookGridItem()
-                                    BookGridItem()
-                                    BookGridItem()
-                                    BookGridItem()
+                                    ForEach(0..<17) { _ in
+                                        NavigationLink(destination: BookListView(),
+                                        label: {
+                                            BookGridItem()
+                                        })
+                                    }
                                 }
                             }
                         }
@@ -168,6 +170,7 @@ struct HomeView: View {
                 .padding(.top, -10)
                 .padding(.bottom, 20)
             }
+            .padding(.bottom, 64)
             .navigationBarHidden(true)
             .ignoresSafeArea()
         }

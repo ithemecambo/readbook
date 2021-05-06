@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152A9DD3263F81E70097F595 /* MyReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DD0263F81E70097F595 /* MyReviewView.swift */; };
+		152A9DD7263F820E0097F595 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DD6263F820E0097F595 /* FeedbackView.swift */; };
+		152A9DDB263F822E0097F595 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DDA263F822E0097F595 /* FilterView.swift */; };
+		152A9DDE263F823A0097F595 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DDD263F823A0097F595 /* NotificationView.swift */; };
+		152A9DE5263F82C80097F595 /* NavigatorBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DE4263F82C70097F595 /* NavigatorBackView.swift */; };
+		152A9DEF263F90D80097F595 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DEE263F90D80097F595 /* LoginView.swift */; };
+		152A9DF3263F90F10097F595 /* CreateAccView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DF2263F90F10097F595 /* CreateAccView.swift */; };
+		152A9DF6263F92250097F595 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DF5263F92250097F595 /* NotificationItem.swift */; };
+		152A9DFB263F92340097F595 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A9DFA263F92340097F595 /* NotificationItem.swift */; };
 		1562F56C263D830300338F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562F56B263D830300338F3C /* AppDelegate.swift */; };
 		1562F56E263D830300338F3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562F56D263D830300338F3C /* SceneDelegate.swift */; };
 		1562F570263D830300338F3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562F56F263D830300338F3C /* ContentView.swift */; };
@@ -36,9 +45,19 @@
 		1562F606263E627A00338F3C /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562F605263E627A00338F3C /* BookListView.swift */; };
 		1562F60A263E64BB00338F3C /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562F609263E64BB00338F3C /* NavigationBarModifier.swift */; };
 		1562F60E263E660700338F3C /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562F60D263E660700338F3C /* UINavigationController+extension.swift */; };
+		1562F611263EFF3100338F3C /* DarkModeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562F610263EFF3100338F3C /* DarkModeViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152A9DD0263F81E70097F595 /* MyReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReviewView.swift; sourceTree = "<group>"; };
+		152A9DD6263F820E0097F595 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		152A9DDA263F822E0097F595 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		152A9DDD263F823A0097F595 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		152A9DE4263F82C70097F595 /* NavigatorBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorBackView.swift; sourceTree = "<group>"; };
+		152A9DEE263F90D80097F595 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		152A9DF2263F90F10097F595 /* CreateAccView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccView.swift; sourceTree = "<group>"; };
+		152A9DF5263F92250097F595 /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationItem.swift; path = Notificaton/NotificationItem.swift; sourceTree = "<group>"; };
+		152A9DFA263F92340097F595 /* NotificationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
 		1562F568263D830300338F3C /* Let's read.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let's read.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1562F56B263D830300338F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1562F56D263D830300338F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +89,7 @@
 		1562F605263E627A00338F3C /* BookListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		1562F609263E64BB00338F3C /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		1562F60D263E660700338F3C /* UINavigationController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+extension.swift"; sourceTree = "<group>"; };
+		1562F610263EFF3100338F3C /* DarkModeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +103,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		152A9DCE263F81E70097F595 /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				152A9DDA263F822E0097F595 /* FilterView.swift */,
+			);
+			path = FilterView;
+			sourceTree = "<group>";
+		};
+		152A9DCF263F81E70097F595 /* MyReview */ = {
+			isa = PBXGroup;
+			children = (
+				152A9DD0263F81E70097F595 /* MyReviewView.swift */,
+			);
+			path = MyReview;
+			sourceTree = "<group>";
+		};
+		152A9DD1263F81E70097F595 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				152A9DD6263F820E0097F595 /* FeedbackView.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		152A9DD2263F81E70097F595 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				152A9DDD263F823A0097F595 /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		152A9DE3263F82C70097F595 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				152A9DE4263F82C70097F595 /* NavigatorBackView.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		152A9DED263F90D80097F595 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				152A9DEE263F90D80097F595 /* LoginView.swift */,
+				152A9DF2263F90F10097F595 /* CreateAccView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		152A9DF8263F92340097F595 /* MyReview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyReview;
+			sourceTree = "<group>";
+		};
+		152A9DF9263F92340097F595 /* Notificaton */ = {
+			isa = PBXGroup;
+			children = (
+				152A9DFA263F92340097F595 /* NotificationItem.swift */,
+			);
+			path = Notificaton;
+			sourceTree = "<group>";
+		};
 		1562F55F263D830200338F3C = {
 			isa = PBXGroup;
 			children = (
@@ -142,15 +226,19 @@
 		1562F583263D833000338F3C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				152A9DF8263F92340097F595 /* MyReview */,
+				152A9DF9263F92340097F595 /* Notificaton */,
 				1562F5D4263DB60000338F3C /* TabBar */,
 				1562F5D2263DB60000338F3C /* Book */,
 				1562F5D6263DB60000338F3C /* MyBook */,
 				1562F5D0263DB60000338F3C /* MySave */,
 				1562F5D1263DB60000338F3C /* Account */,
 				1562F5D5263DB60000338F3C /* Settings */,
+				152A9DE3263F82C70097F595 /* Navigator */,
 				1562F5C6263D8F5100338F3C /* Representable */,
 				1562F5F4263E444900338F3C /* ViewModifier */,
 				1562F576263D830500338F3C /* LaunchScreen.storyboard */,
+				152A9DF5263F92250097F595 /* NotificationItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +246,7 @@
 		1562F584263D833800338F3C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				152A9DED263F90D80097F595 /* Auth */,
 				1562F592263D842800338F3C /* Main */,
 				1562F58E263D842800338F3C /* Home */,
 				1562F590263D842800338F3C /* MyBook */,
@@ -166,6 +255,10 @@
 				1562F58C263D842800338F3C /* BookDetail */,
 				1562F591263D842800338F3C /* Account */,
 				1562F58F263D842800338F3C /* Settings */,
+				152A9DD1263F81E70097F595 /* Feedback */,
+				152A9DCE263F81E70097F595 /* FilterView */,
+				152A9DCF263F81E70097F595 /* MyReview */,
+				152A9DD2263F81E70097F595 /* Notification */,
 				1562F56F263D830300338F3C /* ContentView.swift */,
 			);
 			path = ViewControllers;
@@ -371,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				1562F609263E64BB00338F3C /* NavigationBarModifier.swift */,
+				1562F610263EFF3100338F3C /* DarkModeViewModifier.swift */,
 				1562F5F5263E444900338F3C /* PlaceholderStyleModifier.swift */,
 			);
 			path = ViewModifier;
@@ -454,12 +548,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152A9DF3263F90F10097F595 /* CreateAccView.swift in Sources */,
 				1562F5AD263D858200338F3C /* HomeView.swift in Sources */,
+				152A9DF6263F92250097F595 /* NotificationItem.swift in Sources */,
+				152A9DD3263F81E70097F595 /* MyReviewView.swift in Sources */,
+				152A9DD7263F820E0097F595 /* FeedbackView.swift in Sources */,
 				1562F5EE263DBFFC00338F3C /* LTConstant.swift in Sources */,
 				1562F5E5263DB64E00338F3C /* AccountItem.swift in Sources */,
+				1562F611263EFF3100338F3C /* DarkModeViewModifier.swift in Sources */,
 				1562F5A7263D856D00338F3C /* SettingsView.swift in Sources */,
+				152A9DDE263F823A0097F595 /* NotificationView.swift in Sources */,
 				1562F5B0263D858F00338F3C /* BookDetailView.swift in Sources */,
 				1562F60E263E660700338F3C /* UINavigationController+extension.swift in Sources */,
+				152A9DEF263F90D80097F595 /* LoginView.swift in Sources */,
 				1562F594263D842800338F3C /* MainView.swift in Sources */,
 				1562F5D7263DB60000338F3C /* BookGridItem.swift in Sources */,
 				1562F606263E627A00338F3C /* BookListView.swift in Sources */,
@@ -468,6 +569,7 @@
 				1562F5BF263D8C3300338F3C /* View+extension.swift in Sources */,
 				1562F5E2263DB63F00338F3C /* SaveItem.swift in Sources */,
 				1562F5DB263DB62300338F3C /* BookListItem.swift in Sources */,
+				152A9DE5263F82C80097F595 /* NavigatorBackView.swift in Sources */,
 				1562F5FD263E569800338F3C /* PagingView.swift in Sources */,
 				1562F56C263D830300338F3C /* AppDelegate.swift in Sources */,
 				1562F60A263E64BB00338F3C /* NavigationBarModifier.swift in Sources */,
@@ -479,7 +581,9 @@
 				1562F5A4263D856000338F3C /* SaveView.swift in Sources */,
 				1562F5AA263D857700338F3C /* MyBookView.swift in Sources */,
 				1562F5EB263DB66A00338F3C /* TabBarButton.swift in Sources */,
+				152A9DDB263F822E0097F595 /* FilterView.swift in Sources */,
 				1562F5E8263DB65B00338F3C /* SettingsItem.swift in Sources */,
+				152A9DFB263F92340097F595 /* NotificationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
