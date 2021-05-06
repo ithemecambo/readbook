@@ -18,7 +18,7 @@ For further inquiries please don't hesitate to contact me by:
 ### FREE
 
 ## Screenshot
-<img src="" width="170">   <img src="" width="170">    <img src="" width="170">   <img src="" width="170">    <img src="" width="170">
+<img src="https://github.com/ithemecambo/readbook/blob/main/screenshot/home.png" width="170">   <img src="https://github.com/ithemecambo/readbook/blob/main/screenshot/book-grid.png" width="170">    <img src="https://github.com/ithemecambo/readbook/blob/main/screenshot/book-list.png" width="170">   <img src="https://github.com/ithemecambo/readbook/blob/main/screenshot/my-book.png" width="170">    <img src="https://github.com/ithemecambo/readbook/blob/main/screenshot/book-detail.png" width="170">    <img src="https://github.com/ithemecambo/readbook/blob/main/screenshot/profile.png" width="170">
 
     
 ## Technologies
@@ -29,10 +29,7 @@ Project is created with:
 
 
 ## Support this repo
-* Star this repo
-
-* Share on socail by
-
+* Star this repo <img src="https://github.com/ithemecambo/readbook/blob/main/screenshot/give-star.png" width="60">
 
 
 ## Contact Info
