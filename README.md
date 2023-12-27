@@ -34,4 +34,3 @@ Project is created with:
 
 ## Contact Info
 * Email: senghort.rupp@gmail.com
-* Tel: 0189702323/0969863618
