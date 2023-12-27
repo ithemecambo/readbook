@@ -14,7 +14,7 @@ For further inquiries please don't hesitate to contact me by:
 * Skype: kheang.senghort2
 * Facebook: kheang senghort
 * LinkedIn: kheang senghort
-* Telegram: 0189702323
+
 ### FREE
 
 ## Screenshot
